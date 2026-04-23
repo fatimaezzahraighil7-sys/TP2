@@ -1,5 +1,7 @@
 function addition(a, b) {
-  return a + b;
+  const x = Number(a), y = Number(b);
+  if (Number.isNaN(x) || Number.isNaN(y)) return 0;
+  return x + y;
 }
 
 function soustraction(a, b) {
